@@ -6,14 +6,17 @@
     android:layout_height="match_parent"
     android:background="@drawable/ic_launcher_background"
     android:backgroundTint="@drawable/Avengers Infinity"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="81dp">
 
     <Button
         android:id="@+id/button4"
         android:layout_width="122dp"
         android:layout_height="wrap_content"
         android:backgroundTint="@android:color/black"
-        android:text="Crear Lista"
+        android:text="@string/crear_lista"
         tools:layout_editor_absoluteX="119dp"
-        tools:layout_editor_absoluteY="356dp" />
+        tools:layout_editor_absoluteY="390dp" />
+
+
 </android.support.constraint.ConstraintLayout>
