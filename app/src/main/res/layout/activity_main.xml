@@ -493,8 +493,9 @@
         android:layout_width="wrap_content"
         android:layout_height="30dp"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="25dp"
+        android:layout_marginStart="100dp"
         android:background="#448844"
         android:gravity="center"
         android:paddingLeft="10dp"
@@ -503,4 +504,20 @@
         android:textColor="#ffffff"
         android:textSize="18sp" />
 
-    </RelativeLayout>
+    <TextView
+        android:id="@+id/close"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="25dp"
+        android:layout_marginEnd="120dp"
+        android:background="#448844"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="Close"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+</RelativeLayout>

@@ -90,6 +90,13 @@ import android.widget.TextView;
                     }
                 }
             });
+
+            ((TextView)findViewById(R.id.close)).setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    MainActivity.this.finish();
+                }
+            });
         }
 
         public void alerta(){
@@ -97,7 +104,7 @@ import android.widget.TextView;
             AlertDialog.Builder builder;
             builder = new AlertDialog.Builder(MainActivity.this,android.R.style.Theme_Material_Dialog_Alert);
             builder.setTitle("Alerta")
-                    .setMessage("¿Desea detener el ordenamiento e iniciar uno nuevo (con otros datos)?")
+                    .setMessage("Do you wanna kill the current sorting process and initialize a new one?")
                     .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialogInterface, int i) {
