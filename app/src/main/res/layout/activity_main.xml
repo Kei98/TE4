@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!--El RelativeLayout se encarga de administrar las dimensiones de que se asignarán a la-->
+<!--pantalla del dispositivo y las vistas secundarias que se encuentran dentro de la misma,-->
+<!--así como el color de fondo entre otras.-->
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
 
     android:layout_width="595dp"
@@ -10,6 +14,9 @@
 
     android:paddingTop="@dimen/activity_vertical_margin">
 
+    <!--El LinearLayout se encarga de alinear todos los elementos que se encuentren dentro del mismo-->
+    <!--ya sea de forma horizontal o vertical. Además se encarga de proporcionarle un tamano máximo-->
+    <!--(altura) y un margen de distancia entre cada elemento.-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="40dp"
@@ -19,6 +26,10 @@
         android:gravity="center"
         android:orientation="horizontal">
 
+        <!--El TextView es una interfaz que muestra un texto al usuario. A este se le puede asignar una-->
+        <!--altura, un ancho, color de fondo, una forma, color de texto, tamaño de texto y tipo de texto-->
+        <!--entre otras más. También se le pueden asignar funciones que pueda realizar cuando el usuario-->
+        <!--pulse sobre ellos, los cuales son controlados mediante un ID desde el MainActivity.-->
         <TextView
             android:id="@+id/txtnum1"
             android:layout_width="35dp"
@@ -488,7 +499,19 @@
             android:textColor="#ffffff"
             android:textSize="18sp" />
     </LinearLayout>
-
+    <!--El siguiente TextView es el encargado de mostrar la cantidad de comparaciones-->
+    <TextView
+        android:id="@+id/txtnum41"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="0dp"
+        android:background="#00E676"
+        android:text="Comparison amount: 0"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+    <!--Los siguientes TextView son los botones-->
     <TextView
         android:id="@+id/bsort"
         android:layout_width="wrap_content"
@@ -517,18 +540,6 @@
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
         android:text="Close"
-        android:textColor="#000000"
-        android:textSize="18sp" />
-
-    <TextView
-        android:id="@+id/txtnum41"
-        android:layout_width="wrap_content"
-        android:layout_height="30dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="0dp"
-        android:background="#00E676"
-        android:text="Comparison amount: 0"
         android:textColor="#000000"
         android:textSize="18sp" />
 
